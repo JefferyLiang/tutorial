@@ -94,7 +94,7 @@ let list = [
 ]
 
 list.forEach((item, index) => {
-  console.log(`${index}: ${item}`)
+  console.log(`${index}: ${item.text}`)
 })
 
 // => 1: 1. Javascript基础
