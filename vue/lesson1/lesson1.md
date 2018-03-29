@@ -143,3 +143,9 @@ var app = new Vue({
 当我们完成了解了vue.js又什么特点，就会开始使用`vue-cli`构建工程化项目，在项目之中使用vue.js。
 
 时间: 2018-03-27
+
+作者: Jeffery Liang
+
+邮箱: lzh.jeffery@gmail.com
+
+如果要转载请通过邮箱联系我。并声明原文地址。
