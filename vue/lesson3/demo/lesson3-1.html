@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue-lesson-3-1</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <div id="app">
+    {{ msg }}
+  </div>
+  <script>
+    let app = new Vue({
+      el: '#app',
+      data: {
+        msg: 'Hello vue.js'
+      },
+      beforeCreate () {
+        console.log('| --- before create')
+        console.log('|')
+      },
+      created () {
+        console.log('|')
+        console.log('| --- | --- created')
+        console.log('|')
+        setTimeout(() => {
+          // trigger update
+          this.msg = 'change vue.js'
+        }, 2000)
+        setTimeout(() => {
+          // trigger destroy
+          this.$destroy()
+        }, 4000)
+      },
+      beforeMount () {
+        console.log('|')
+        console.log('| --- | --- | --- before mount')
+        console.log('|')
+      },
+      mounted () {
+        console.log('|')
+        console.log('| --- | --- | ---- mounted')
+        console.log('|')
+      },
+      beforeUpdate () {
+        console.log('|')
+        console.log('| --- | --- | ---- before update')
+        console.log('|')
+      },
+      updated () {
+        console.log('|')
+        console.log('| --- | --- | ---- updated')
+        console.log('|')
+      },
+      beforeDestroy () {
+        console.log('|')
+        console.log('| --- | --- before destroy')
+        console.log('|')
+      },
+      destroyed () {
+        console.log('|')
+        console.log('| --- destroy')
+      }
+    })
+  </script>
+</body>
+</html>
