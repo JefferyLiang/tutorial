@@ -12,7 +12,7 @@
 
 那么我们来看一下 vue.js 的生命周期图
 
-！[加载失败](https://github.com/JefferyLiang/tutorial/blob/master/static/img/lifecycle.png)
+![加载失败](https://github.com/JefferyLiang/tutorial/blob/master/static/img/lifecycle.png)
 
 在 vue.js 的生命周期里面我们需要关注的几个关键的钩子
 
