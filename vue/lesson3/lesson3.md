@@ -12,7 +12,11 @@
 
 那么我们来看一下 vue.js 的生命周期图
 
+<<<<<<< HEAD
 ！[加载失败](/static/img/lifecycle.png, "vue.js 生命周期")
+=======
+！[加载失败](https://cn.vuejs.org/images/lifecycle.png)
+>>>>>>> 43e0b100337a474762851ca94e88bbc4d6ca3d83
 
 在 vue.js 的生命周期里面我们需要关注的几个关键的钩子
 
