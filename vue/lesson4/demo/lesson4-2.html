@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue-lesson-4-1</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <p>原字符: {{ msg }}</p>
+    <p>计算字符: {{ reversedMessage }}</p>
+  </div>
+  <script>
+    let app = new Vue({
+      el: '#app',
+      data: {
+        msg: 'Hello Vue.js'
+      },
+      computed: {
+        reversedMessage () {
+          return this.msg.split('').reverse().join('')
+        }
+      },
+      created () {
+        setTimeout(() => {
+          this.msg = 'The new String'
+        }, 2000)
+      }
+    })
+  </script>
+</body>
+</html>
